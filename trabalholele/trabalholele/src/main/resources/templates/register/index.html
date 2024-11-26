@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+<div class="background">
+    <div class="overlay"></div>
+    <h1 class="main-title">Sorriso Hotéis</h1>
+        <div class="form-container">
+            <h2 class="form-title">Crie sua conta</h2>
+            <form class="signup-form" action="/register" method="post">
+                <div class="form-group">
+                    <label for="name" class="form-label">Nome Completo:</label>
+                    <input type="text" id="name" name="name" class="form-input" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="username" class="form-label">Usuario:</label>
+                    <input type="username" id="username" name="username" class="form-input" required>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="password" class="form-label">Senha:</label>
+                    <input type="password" id="password" name="password" class="form-input" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword" class="form-label">Confirmar Senha:</label>
+                    <input type="confirmPassword" id="confirmPassword" name="confirmPassword" class="form-input" required>
+                </div>
+
+                <button type="submit" class="form-button">Criar conta</button>
+                <div th:if="${error}">
+                    <p style="color: red;" th:text="${error}"></p>
+                </div>
+            </form>
+        </div>
+</div>
+</body>
+</html>

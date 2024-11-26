@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações</title>
+    <link rel="stylesheet" href="/css/stylessidebar.css">
+    <link rel="stylesheet" href="/css/styleconf.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <a href="/configuracoes" class="profile-link">
+                <img class="profile-pic" src="/img/profile.jpg" alt="Foto do Perfil">
+            </a>
+            <nav class="menu">
+                <a href="/u/home" class="menu-item">
+                    <i class="icon home-icon"></i> Home
+                </a>
+                <a href="/cursos" class="menu-item">
+                    <i class="icon cursos-icon"></i> Cursos
+                </a>
+                <a href="/certificado" class="menu-item">
+                    <i class="icon favorito-icon"></i> Certificado
+                </a>
+                <a href="/configuracoes" class="menu-item">
+                    <i class="icon configuracoes-icon"></i> Configurações
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Conteúdo Principal -->
+        <main class="content">
+            <section class="settings-card">
+                <h1 class="settings-title">Configurações do Usuário</h1>
+                <form class="settings-form">
+                    <!-- Foto de Perfil -->
+                    <div class="form-group">
+                        <label for="profile-pic">Foto de Perfil</label>
+                        <div class="profile-pic-wrapper">
+                            <img id="profile-pic" src="/img/profile.jpg" alt="Foto do Usuário">
+                        </div>
+                    </div>
+
+                    <!-- Nome do Usuário -->
+                    <div class="form-group">
+                        <label for="username">Nome do Usuário</label>
+                        <input type="text" id="username" name="username" value="Nome do Usuário" readonly>
+                    </div>
+
+                    <!-- Senha -->
+                    <div class="form-group">
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" name="password" value="********" readonly>
+                    </div>
+
+                    <!-- Botão Sair -->
+                    <div class="form-group">
+                        <a href="/login" class="logout-button">Sair</a>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

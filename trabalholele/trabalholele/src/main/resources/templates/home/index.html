@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>DevFácil</title>
+    <link rel="stylesheet" href="/css/stylesQS.css">
+    <link rel="stylesheet" href="/css/stylessidebar.css">
+</head>
+<body>
+<div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <!-- Imagem do Perfil clicável -->
+        <a th:href="@{/configuracoes}" class="profile-link">
+            <img class="profile-pic" th:src="@{/img/profile.jpg}" alt="Foto do Perfil">
+        </a>
+        <nav class="menu">
+            <!-- Ícones clicáveis -->
+            <a th:href="@{/u/home}" class="menu-item">
+                <i class="icon home-icon"></i> Home
+            </a>
+            <a th:href="@{/cursos}" class="menu-item">
+                <i class="icon cursos-icon"></i> Cursos
+            </a>
+            <a th:href="@{/certificado}" class="menu-item">
+                <i class="icon favorito-icon"></i> Certificado
+            </a>
+            <a th:href="@{/configuracoes}" class="menu-item">
+                <i class="icon configuracoes-icon"></i> Configurações
+            </a>
+        </nav>
+    </aside>
+    <!-- Main Content -->
+    <main class="content">
+        <header class="header">
+            <!-- Logo clicável -->
+            <a th:href="@{/home/index}" class="logo-link">
+                <img class="logo" th:src="@{/img/logo.png}" alt="Logo DevFácil">
+            </a>
+        </header>
+        <section class="quem-somos">
+            <h1>QUEM SOMOS?</h1>
+            <p>
+                DevFácil é uma plataforma de cursos em vídeo para desenvolvedores. Aqui, quem deseja ensinar compartilha conhecimento com alunos que buscam crescer na tecnologia. Conectamos professores e estudantes para facilitar o aprendizado e impulsionar carreiras!
+            </p>
+            <!-- Redes Sociais -->
+            <div class="social-icons">
+                <a  target="_blank">
+                    <img th:src="@{/img/linkedin.png}" alt="LinkedIn">
+                </a>
+                <a target="_blank">
+                    <img th:src="@{/img/instagram.png}" alt="Instagram">
+                </a>
+            </div>
+        </section>
+    </main>
+</div>
+</body>
+</html>

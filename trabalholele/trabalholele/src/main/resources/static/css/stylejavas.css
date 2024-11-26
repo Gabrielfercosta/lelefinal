@@ -1,0 +1,65 @@
+/* Estilo do Fundo Geral */
+body {
+    background-color: #1e293b; /* Fundo azul escuro */
+    color: #ecf0f1; /* Texto claro */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilo do Conteúdo Principal */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 40px;
+}
+
+/* Estilo do Card de Curso */
+.course-card {
+    width: 100%;
+    max-width: 800px;
+    background-color: #2c3e50; /* Azul-escuro para harmonizar com o fundo */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Imagem do Curso */
+.course-image {
+    width: 15%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.course-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1abc9c; /* Verde claro */
+    margin-bottom: 20px;
+}
+
+.course-description, .course-details {
+    font-size: 16px;
+    color: #ecf0f1; /* Texto claro */
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.start-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #1abc9c; /* Verde-claro */
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.start-button:hover {
+    background-color: #16a085; /* Verde mais escuro */
+    transform: scale(1.05);
+}

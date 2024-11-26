@@ -1,0 +1,91 @@
+/* Fundo do Conteúdo */
+.content {
+    background: linear-gradient(135deg, #1e293b, #2c3e50); /* Gradiente do fundo */
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Garante altura total da página */
+}
+
+/* Card de Configurações */
+.settings-card {
+    width: 100%;
+    max-width: 500px;
+    background-color: #ffffff; /* Fundo branco para contraste */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    text-align: center;
+}
+
+/* Título */
+.settings-title {
+    font-size: 24px;
+    color: #34495e; /* Azul-escuro */
+    margin-bottom: 20px;
+}
+
+/* Formulário */
+.settings-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Grupo do Formulário */
+.form-group {
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #7f8c8d; /* Cinza */
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ecf0f1;
+    color: #34495e; /* Azul-escuro */
+    pointer-events: none; /* Torna os campos não-editáveis */
+}
+
+/* Foto de Perfil */
+.profile-pic-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+#profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #1abc9c;
+    object-fit: cover;
+}
+
+/* Botão de Logout */
+.logout-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #e74c3c; /* Vermelho */
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    text-align: center;
+}
+
+.logout-button:hover {
+    background-color: #c0392b; /* Vermelho mais escuro */
+    transform: scale(1.05);
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos</title>
+    <link rel="stylesheet" th:href="@{/css/stylesCur.css}">
+    <link rel="stylesheet" th:href="@{/css/stylessidebar.css}">
+</head>
+<body>
+<div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <!-- Imagem do Perfil clicável -->
+        <a th:href="@{/configuracoes}" class="profile-link">
+            <img class="profile-pic" th:src="@{/img/profile.jpg}" alt="Foto do Perfil">
+        </a>
+        <nav class="menu">
+            <!-- Ícones clicáveis -->
+            <a th:href="@{/u/home}" class="menu-item">
+                <i class="icon home-icon"></i> Home
+            </a>
+            <a th:href="@{/cursos}" class="menu-item">
+                <i class="icon cursos-icon"></i> Cursos
+            </a>
+            <a th:href="@{/certificado}" class="menu-item">
+                <i class="icon favorito-icon"></i> Certificado
+            </a>
+            <a th:href="@{/configuracoes}" class="menu-item">
+                <i class="icon configuracoes-icon"></i> Configurações
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Conteúdo principal -->
+    <div class="content">
+        <div class="header">
+            <h1>Cursos</h1>
+        </div>
+        <div class="courses">
+            <div class="course-card">
+                <img th:src="@{/img/Javascript.png}" alt="Curso de Javascript">
+                <h3>Javascript Básico</h3>
+                <p>[20 HORAS]</p>
+                <a th:href="@{/descricaoJ}" class="see-more">Veja mais</a>
+            </div>
+            <div class="course-card">
+                <img th:src="@{/img/csharp.png}" alt="Curso de C#">
+                <h3>C# Básico</h3>
+                <p>[40 HORAS]</p>
+                <a th:href="@{/descricaoC}" class="see-more">Veja mais</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
